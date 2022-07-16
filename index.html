@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lesson 19</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <div class="clock"></div>
+		<section>
+			<div class="slider-section">
+				<div class="slider-wrapper">
+					<div class="slider-item">
+						<img src="https://picsum.photos/1600/600?random=1" alt="" />
+						<div class="slider-info">
+							<h3>Slider 1</h3>
+							<p>slider 1 description</p>
+						</div>
+					</div>
+					<div class="slider-item">
+						<img src="https://picsum.photos/1600/600?random=2" alt="" />
+						<div class="slider-info">
+							<h3>Slider 2</h3>
+							<p>slider 2 description</p>
+						</div>
+					</div>
+					<div class="slider-item">
+						<img src="https://picsum.photos/1600/600?random=3" alt="" />
+						<div class="slider-info">
+							<h3>Slider 3</h3>
+							<p>slider 3 description</p>
+						</div>
+					</div>
+				</div>
+				<div class="pagination">
+					<button class="pg-btn btn" id="prev"><<</button>
+					<button class="pg-btn btn" id="next">>></button>
+				</div>
+				<div class="pagination-bullets">
+					<span class="pgn-bullet"></span>
+					<span class="pgn-bullet"></span>
+					<span class="pgn-bullet"></span>
+				</div>
+			</div>
+
+			<div class="auto-sliding">
+				<button class="pg-btn btn" id="start-auto">start auto sliding</button>
+				<button class="pg-btn btn" id="stop-auto">stop auto sliding</button>
+			</div>
+		</section> -->
+
+    <section class="form-section">
+      <form class="form" id="sign-up" action="/save-user" method="" novalidate>
+        <div class="input-field">
+          <label for="username">Enter User Name</label>
+          <input type="text" id="username" placeholder="user name" required />
+          <span class="error-message" id="username-error"></span>
+        </div>
+
+        <div class="input-field">
+          <label for="email">Enter Email</label>
+          <input type="email" id="email" placeholder="email" required />
+          <span class="error-message" id="email-error"></span>
+        </div>
+
+        <div class="input-field">
+          <label for="password">Enter Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="password"
+            minlength="4"
+          />
+          <span class="error-message" id="password-error"></span>
+        </div>
+
+        <div class="input-field">
+          <label for="number">Enter Personal Number</label>
+          <input
+            type="text"
+            id="personal_num"
+            placeholder="personal number"
+            required
+          />
+          <span class="error-message" id="personal_num-error"></span>
+        </div>
+
+        <div class="input-field">
+          <label for="number">Enter Mobile Number</label>
+          <input
+            type="text"
+            id="mobile_num"
+            placeholder="mobile number"
+            required
+          />
+          <span class="error-message" id="mobile_num-error"></span>
+        </div>
+
+        <div class="input-field">
+          <label for="Position">Enter Position</label>
+          <input type="text" id="position" placeholder="position" required />
+          <span class="error-message" id="position-error"></span>
+        </div>
+
+        <div class="input-field">
+          <button class="btn" type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="modal-section">
+      <div class="modal" id="sign-up-modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Modal Title</h3>
+            <button class="btn delete modal-close">X</button>
+          </div>
+          <div class="modal-body">this is modal body</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal" id="sign-in-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Modal two</h3>
+          <button class="btn delete modal-close">X</button>
+        </div>
+        <div class="modal-body">this is sign-in-modal modal body</div>
+      </div>
+    </div>
+
+    <button class="open-modal-second btn">open second modal</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
